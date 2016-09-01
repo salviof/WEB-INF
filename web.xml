@@ -22,8 +22,15 @@
     </context-param>
     <context-param>
         <param-name>javax.faces.PROJECT_STAGE</param-name>
-        <param-value>Production</param-value>
+        <param-value>Development</param-value>
     </context-param>
+    <!-- Time in seconds that facelets should be checked for changes since last request. A value of -1 disables refresh checking. -->
+    <context-param>
+        <param-name>javax.faces.FACELETS_REFRESH_PERIOD</param-name>
+        <param-value>0</param-value>
+    </context-param>
+
+
     <context-param>
         <param-name>javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE</param-name>
         <param-value>true</param-value>
@@ -92,6 +99,7 @@
         <servlet-name>Super_BitsWebPaginas</servlet-name>
         <servlet-class>com.super_bits.modulosSB.webPaginas.controller.servletes.WebPaginasServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
+
     </servlet>
     <servlet-mapping>
         <servlet-name>Super_BitsWebPaginas</servlet-name>
@@ -108,7 +116,7 @@
 
 
 
- 
+
 
     <error-page>
         <exception-type>javax.faces.application.ViewExpiredException</exception-type>
