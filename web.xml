@@ -149,7 +149,15 @@
 
 
 
+    <servlet>
+        <servlet-name>slvGestorDeArquivos</servlet-name>
+        <servlet-class>com.super_bits.modulosSB.webPaginas.controller.servletes.servletArquivoDeEntidade.ServletArquivosDeEntidade</servlet-class>
 
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>slvGestorDeArquivos</servlet-name>
+        <url-pattern>/arquivos/*</url-pattern>
+    </servlet-mapping>
 
 
 
