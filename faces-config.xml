@@ -33,6 +33,7 @@
         </view-handler>
     </application>
 
+
     <application>
         <el-resolver>
             org.primefaces.application.exceptionhandler.PrimeExceptionHandlerELResolver
@@ -40,9 +41,12 @@
     </application>
     <factory>
         <exception-handler-factory>
-            org.primefaces.application.exceptionhandler.PrimeExceptionHandlerFactory
+            com.super_bits.modulosSB.webPaginas.TratamentoDeErros.FabricaManipuladorErrosJsf
         </exception-handler-factory>
     </factory>
+
+
+
 
 
     <lifecycle>
