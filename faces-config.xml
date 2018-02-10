@@ -46,7 +46,9 @@
     </factory>
 
 
-
+ <application>
+        <resource-handler>com.super_bits.modulosSB.webPaginas.recursosJSF.RecursosJSF</resource-handler>
+    </application>
 
 
     <lifecycle>
